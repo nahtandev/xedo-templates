@@ -26,12 +26,13 @@ export default function ConfirmationPage() {
 
   // The cart is persisted in localStorage and only rehydrates after mount.
   // Wait for that before reading lastOrderId — otherwise the first render sees
-  // null and wrongly bounces to the home page (flash then redirect).
-  const [hydrated, setHydrated] = React.useState(() => useCart.persist.hasHydrated());
+  // null and wrongly bounces to the home page (flash then redirect). The
+  // persist API is touched only inside the effect (client) so the page stays
+  // safe to server-render / prerender.
+  const [hydrated, setHydrated] = React.useState(false);
   React.useEffect(() => {
-    const unsub = useCart.persist.onFinishHydration(() => setHydrated(true));
-    setHydrated(useCart.persist.hasHydrated());
-    return unsub;
+    if (useCart.persist.hasHydrated()) setHydrated(true);
+    return useCart.persist.onFinishHydration(() => setHydrated(true));
   }, []);
 
   React.useEffect(() => {
