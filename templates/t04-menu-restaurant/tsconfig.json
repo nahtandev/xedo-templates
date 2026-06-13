@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./*"],
+      "@xedo/ui": ["../../packages/ui/src/index.ts"],
+      "@xedo/ui/*": ["../../packages/ui/src/*"],
+      "@xedo/sdk-hooks": ["../../packages/sdk-hooks/src/index.ts"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "xedo-templates",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "dev:t01": "pnpm --filter @xedo/template-boutique-generale dev",
+    "dev:t04": "pnpm --filter @xedo/template-menu-restaurant dev",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "^5.0.0"
+  }
+}
