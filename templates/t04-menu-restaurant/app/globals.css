@@ -1,1 +1,11 @@
 @import 'tailwindcss';
+@import '../../../packages/ui/src/styles/theme.css';
+
+/* Scan the shared design system for class names. */
+@source '../../../packages/ui/src';
+
+@layer base {
+  body {
+    @apply bg-sand-50 font-body text-sand-900 antialiased;
+  }
+}
