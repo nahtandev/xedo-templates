@@ -12,7 +12,6 @@ Chaque template est une application **Next.js** complète — catalogue, panier,
 - **Une seule config à toucher** — `xedo.config.ts` à la racine de chaque template.
 - **Déployable en un clic** sur Vercel.
 - **Open-source** — code lisible, modifiable, sans dépendance propriétaire.
-- **Francophone by default** — conçu pour l'Afrique de l'Ouest francophone.
 
 ---
 
@@ -42,7 +41,7 @@ Chaque template est une application **Next.js** complète — catalogue, panier,
 
 - **[Next.js 16](https://nextjs.org)** — App Router, Turbopack, Server Actions
 - **[Tailwind CSS v4](https://tailwindcss.com)** + design system maison **`@xedo/ui`**
-- **[`@xedo/sdk` v0.2.2](https://www.npmjs.com/package/@xedo/sdk)** — client officiel Xedo
+- **[`@xedo/sdk` v0.2.3](https://www.npmjs.com/package/@xedo/sdk)** — client officiel Xedo
 - **[Zustand](https://zustand-demo.pmnd.rs)** — état client (panier)
 - **[Zod v4](https://zod.dev)** — validation des formulaires
 - **[pnpm](https://pnpm.io)** — package manager (monorepo workspaces)

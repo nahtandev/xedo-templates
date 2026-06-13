@@ -51,7 +51,7 @@ Une boutique e-commerce complète connectée à votre catalogue Xedo :
 
 - **Next.js 16** — App Router, Turbopack, Server Actions
 - **Tailwind CSS v4** + design system maison **`@xedo/ui`**
-- **`@xedo/sdk` v0.2.2** — tous les appels API côté serveur
+- **`@xedo/sdk` v0.2.3** — tous les appels API côté serveur
 - **Zustand** — état panier côté client
 - **Zod v4** — validation formulaire checkout
 
@@ -144,7 +144,7 @@ t01-boutique-generale/
 │   ├── layout.tsx           # Layout global (fonts, metadata)
 │   ├── page.tsx             # Accueil
 │   ├── catalogue/
-│   │   └── page.tsx         # Catalogue paginé
+│   │   └── page.tsx         # Catalogue (recherche + filtres)
 │   ├── produits/
 │   │   └── [slug]/
 │   │       └── page.tsx     # Fiche produit

@@ -18,8 +18,8 @@ importers:
   packages/sdk-hooks:
     dependencies:
       '@xedo/sdk':
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.2.3
+        version: 0.2.3
       react:
         specifier: ^18.0.0
         version: 18.3.1
@@ -62,8 +62,8 @@ importers:
   templates/t01-boutique-generale:
     dependencies:
       '@xedo/sdk':
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.2.3
+        version: 0.2.3
       '@xedo/sdk-hooks':
         specifier: workspace:*
         version: link:../../packages/sdk-hooks
@@ -108,8 +108,8 @@ importers:
   templates/t04-menu-restaurant:
     dependencies:
       '@xedo/sdk':
-        specifier: ^0.2.2
-        version: 0.2.2
+        specifier: ^0.2.3
+        version: 0.2.3
       '@xedo/sdk-hooks':
         specifier: workspace:*
         version: link:../../packages/sdk-hooks
@@ -499,8 +499,8 @@ packages:
   '@types/react@18.3.31':
     resolution: {integrity: sha512-vfEqpXTvwT91yhmwdfouStN2hSKwTvyRs8qpLfADyrq/kxDw0hZM7Wk9Ug1FELj8hIby+S/+kQCSRFF32nv2Qw==}
 
-  '@xedo/sdk@0.2.2':
-    resolution: {integrity: sha512-4y6d+jwW1Z+NmFuHBjbJy9bDsJ5Ko5HX4Qu0/NMRf8BSpIbieos28CjgmdZT/DDcq6uJajPDiCZGhXJK5iWxng==}
+  '@xedo/sdk@0.2.3':
+    resolution: {integrity: sha512-alnzt2EDV7lmVtHGjdOBx6sxbE8kxhNKfE7JpkRwyX8MmV3Xr3poTmZJQmXq5G+TdunoWfAyF4ZARgX1XTrWhw==}
     engines: {node: '>=18'}
 
   baseline-browser-mapping@2.10.37:
@@ -997,7 +997,7 @@ snapshots:
       '@types/prop-types': 15.7.15
       csstype: 3.2.3
 
-  '@xedo/sdk@0.2.2': {}
+  '@xedo/sdk@0.2.3': {}
 
   baseline-browser-mapping@2.10.37: {}
 

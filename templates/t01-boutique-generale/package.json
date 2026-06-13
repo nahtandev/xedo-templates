@@ -12,7 +12,7 @@
   "dependencies": {
     "@xedo/ui": "workspace:*",
     "@xedo/sdk-hooks": "workspace:*",
-    "@xedo/sdk": "^0.2.2",
+    "@xedo/sdk": "^0.2.3",
     "next": "^16.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

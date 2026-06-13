@@ -54,7 +54,7 @@ Un site de commande en ligne complet pour votre restaurant, connecté à votre c
 
 - **Next.js 16** — App Router, Turbopack, Server Actions
 - **Tailwind CSS v4** + **shadcn/ui**
-- **`@xedo/sdk` v0.2.2** — tous les appels API côté serveur
+- **`@xedo/sdk` v0.2.3** — tous les appels API côté serveur
 - **Zustand** — état panier côté client
 - **Zod v4** — validation formulaire commande
 

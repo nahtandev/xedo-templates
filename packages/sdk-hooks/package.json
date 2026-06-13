@@ -8,7 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@xedo/sdk": "^0.2.2"
+    "@xedo/sdk": "^0.2.3"
   },
   "peerDependencies": {
     "react": "^18.0.0"
