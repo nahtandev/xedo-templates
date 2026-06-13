@@ -3,6 +3,8 @@
 > Template e-commerce minimaliste pour toute boutique vendant des produits physiques.
 > Niveau : 🆓 **Gratuit** | [Xedo Templates](../../README.md)
 
+🔗 **[Voir la démo en ligne →](https://xedo-t01-boutique-generale.vercel.app/)**
+
 ---
 
 ## Ce que fait ce template

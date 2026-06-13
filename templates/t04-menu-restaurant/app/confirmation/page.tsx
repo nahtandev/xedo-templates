@@ -24,7 +24,18 @@ export default function ConfirmationPage() {
   const [order, setOrder] = React.useState<OrderView | null>(null);
   const [state, setState] = React.useState<'loading' | 'ok' | 'missing'>('loading');
 
+  // The cart is persisted in localStorage and only rehydrates after mount.
+  // Wait for that before reading lastOrderId — otherwise the first render sees
+  // null and wrongly bounces to the home page (flash then redirect).
+  const [hydrated, setHydrated] = React.useState(() => useCart.persist.hasHydrated());
   React.useEffect(() => {
+    const unsub = useCart.persist.onFinishHydration(() => setHydrated(true));
+    setHydrated(useCart.persist.hasHydrated());
+    return unsub;
+  }, []);
+
+  React.useEffect(() => {
+    if (!hydrated) return;
     if (!lastOrderId) {
       setState('missing');
       return;
@@ -43,12 +54,12 @@ export default function ConfirmationPage() {
     return () => {
       active = false;
     };
-  }, [lastOrderId, clear]);
+  }, [hydrated, lastOrderId, clear]);
 
-  // After hydration, send users here without an order back to the menu.
+  // Once hydrated, send users here without an order back to the menu.
   React.useEffect(() => {
-    if (state === 'missing') router.replace('/');
-  }, [state, router]);
+    if (hydrated && state === 'missing') router.replace('/');
+  }, [hydrated, state, router]);
 
   if (state !== 'ok' || !order) {
     return (

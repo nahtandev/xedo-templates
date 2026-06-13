@@ -21,7 +21,7 @@ Chaque template est une application **Next.js** complète — catalogue, panier,
 
 | Template | Description | Stack |
 |---|---|---|
-| [T01 — Boutique Généraliste](./templates/t01-boutique-generale) | Boutique e-commerce minimaliste, catalogue + checkout | Next.js, Tailwind, @xedo/sdk |
+| [T01 — Boutique Généraliste](./templates/t01-boutique-generale) | Boutique e-commerce minimaliste, catalogue + checkout — [démo live](https://xedo-t01-boutique-generale.vercel.app/) | Next.js, Tailwind, @xedo/sdk |
 | [T04 — Menu Restaurant](./templates/t04-menu-restaurant) | Menu en ligne pour restaurant ou snack, commande directe | Next.js, Tailwind, @xedo/sdk |
 
 ### ⭐ Premium — Bientôt disponibles
