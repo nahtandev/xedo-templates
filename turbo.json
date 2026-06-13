@@ -3,6 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
+      "env": ["XEDO_API_KEY", "XEDO_API_BASE_URL", "NEXT_PUBLIC_SITE_URL"],
       "outputs": [".next/**", "dist/**"]
     },
     "dev": {
